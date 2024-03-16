@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8"/> 
+        <title>Calculator</title>
+        <script src="./calculator.js"></script>
+    </head>
+    <body>
+        <h1>Esto es una calculadora 🙄</h1>
+        <h2>Instrucciones 📑🎎🤓</h2>
+        <p>
+            Las operaciones básicas disponibles se ejecutan tomando como primer argumento el dígito A y luego al dígito B
+        </p>
+        <p>   A + B   |   A * B   |   A - B   |   A / B   |</p>
+        <p>En el caso de las potencias, cada botón indica el orden de la operación</p>
+
+        <p>
+            <input type="number" id="primerDigito" name="digitos"> A </input>
+            <label for="primerDigito"></label>
+            <input type="number" id="segundoDigito" name="digitos"> B </input>
+            <label for="segundoDigito"></label>
+        </p>
+        <p><button id="botonSuma">  +  </button>
+           <button id="botonResta">  -  </button>
+           <button id="botonMultiplicacion">  X  </button> 
+           <button id="botonDivision">  /  </button>
+           <button id="botonPotencia"> A ^ B </button>
+           <button id="botonRaiz"> √A </button>
+           <button id="botonRaiz2"> B√A </button>
+           <button id="calculosMultiples">Calcular todo!</button>
+           <span id="resultado"></span>
+        </p>
+        <h2>Operaciones posibles</h2>
+        <table border="1">
+            <tr>
+                <th>Operación</th>
+                <th>    A     ->    B    </th>
+                <th>    B     ->    A    </th>
+            </tr>
+            <tr><th>Suma</th>
+                <td><span id="ta+b"></span></td>
+                <td><span id="tb+a"></span></td>
+            </tr>
+            <tr><th>Resta</th>
+                <td><span id="ta-b"></span></td>
+                <td><span id="tb-a"></span></td>
+            </tr>
+            <tr><th>Multiplicacion</th>
+                <td><span id="ta*b"></span></td>
+                <td><span id="tb*a"></span></td>
+            </tr>
+            <tr><th>Division</th>
+                <td><span id="ta/b"></span></td>
+                <td><span id="tb/a"></span></td>
+            </tr>
+            <tr><th>Potencia</th>
+                <td><span id="ta^b"></span></td>
+                <td><span id="tb^a"></span></td>
+            </tr>
+            <tr><th>Raiz Cuadrada</th>
+                <td><span id="traiza"></span></td>
+                <td><span id="traizb"></span></td>
+            </tr>
+            <tr><th>Raiz n√x</th>
+                <td><span id="traizab"></span></td>
+                <td><span id="traizba"></span></td>
+            </tr>
+        </table>
+    </body>
+</html>
